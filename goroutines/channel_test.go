@@ -24,6 +24,7 @@ func TestCreateChannel(t *testing.T) {
 }
 
 func GiveMeResponse(channel chan string) {
+	time.Sleep(5 * time.Second)
 	channel <- "Alfan Almunawar"
 	fmt.Println("Selesai Mengirim Response")
 }
